@@ -19,10 +19,10 @@ spec:
         - name: data-analytics
           image: seliius27122.seli.gic.ericsson.se:8080/data-eea/init:v1.1
           readinessProbe:
-            tcpSocket:
-              port: 80
-            initialDelaySeconds: 15
-            periodSeconds: 20
-            timeoutSeconds: 600
+            exec:
+              command:
+                - hdfs
+            initialDelaySeconds: 5
+            periodSeconds: 5
 
 
