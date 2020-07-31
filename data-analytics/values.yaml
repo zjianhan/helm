@@ -8,3 +8,8 @@ image:
   repository: seliius27122.seli.gic.ericsson.se:8080/data-eea/init
   tag: v1.1
   pullPolicy: Always
+  containerPort: 80
+
+service:
+  type: NodePort
+  port: 8088
