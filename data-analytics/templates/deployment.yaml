@@ -6,8 +6,23 @@ metadata:
   labels:
     app: "data-analytics"
 spec:
-  containers:
-    - name: data-analytics
-      image: seliius27122.seli.gic.ericsson.se:8080/data-eea/init:v1.1
+  selector:
+    matchLabels:
+      app: data-analytics
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: data-analytics
+    spec:
+      containers:
+        - name: data-analytics
+          image: seliius27122.seli.gic.ericsson.se:8080/data-eea/init:v1.1
+          readinessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            timeoutSeconds: 600
 
 
