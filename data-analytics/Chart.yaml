@@ -3,4 +3,4 @@ appVersion: "1.1"
 description: eea data analytics
 name: data-analytics
 version: 0.0.1
-icon: https://github.com/zjianhan/helm/blob/master/data-analytics/Tiger.png
+icon: file://Tiger.png
