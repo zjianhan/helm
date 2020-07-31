@@ -1,0 +1,10 @@
+# Default values for data-analytics.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: seliius27122.seli.gic.ericsson.se:8080/data-eea/init
+  tag: v1.1
+  pullPolicy: IfNotPresent
