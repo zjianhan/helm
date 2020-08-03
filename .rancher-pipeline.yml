@@ -2,4 +2,4 @@ stages:
   - name: Deploy some workloads
     steps:
       - applyYamlConfig:
-          path: ./templates/deployment.yaml
+          path: ./data-analytics/templates/deployment.yaml
