@@ -1,0 +1,5 @@
+stages:
+  - name: Deploy some workloads
+    steps:
+      - applyYamlConfig:
+          path: ./templates/deployment.yaml
