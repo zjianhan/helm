@@ -1,5 +1,6 @@
 stages:
-  - name: Deploy some workloads
-    steps:
-      - applyYamlConfig:
-          path: ./data-analytics/templates/deployment.yaml
+- name: Deploy some workloads
+  steps:
+  - applyYamlConfig:
+      path: ./data-analytics/templates/deployment.yaml
+notification: {}
