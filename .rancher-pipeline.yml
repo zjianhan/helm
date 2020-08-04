@@ -3,4 +3,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./data-analytics/templates/deployment.yaml
-
+branch:
+  include:
+  - master
+notification: {}
