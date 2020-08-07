@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: data-analytics
-          image: seliius27122.seli.gic.ericsson.se:8080/data-eea/py3.6base:v1
+          image: 192.168.1.2:8080/data-eea/py3.6base:v1
           readinessProbe:
             exec:
               command:
